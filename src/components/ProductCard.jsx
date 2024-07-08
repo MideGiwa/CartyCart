@@ -7,7 +7,7 @@ import rating from '../assets/rating.svg';
 
 const ProductCard = () => {
   return (
-    <div className="col-5 col-md-3 product-card">
+    <div className="col-6 col-md-3 product-card">
       
       <img src={shoes} alt="adidas" />
       <div className="information-overlay">

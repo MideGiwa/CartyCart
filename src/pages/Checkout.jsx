@@ -14,7 +14,7 @@ const Checkout = () => {
   return (
     <div className="">
       <Header />
-      <div className="container-fluid my-3 w-100">
+      <div className="container-fluid d-flex justify-content-center my-5 w-100">
         <div className="row gap-3 gap-md-0 p-3 w-100 justify-content-around">
           <div className="col-md-6">
             <PaymentMethod />
@@ -35,20 +35,20 @@ const PaymentMethod = () => {
   return (
     <div className="payment-method">
       <div className="text">Payment method</div>
-      <div className="payment-options">
-        <div className="p-option op">
+      <div className="row payment-options">
+        <div className="col-2 p-option op">
           <img src={bank} alt="" />
           <div>Bank</div>
         </div>
-        <div className="p-option op">
+        <div className="col-2 p-option op">
           <img src={card} alt="" />
           <div>card</div>
         </div>
-        <div className="p-option op">
+        <div className="col-2 p-option op">
           <img src={pay} alt="" />
           <div>Pay</div>
         </div>
-        <div className="p-option">
+        <div className="col-2 p-option">
           <div>More</div>
         </div>
       </div>

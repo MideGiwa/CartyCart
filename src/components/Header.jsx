@@ -6,6 +6,7 @@ import cart from "../assets/cart-white.svg";
 import shipping from "../assets/shipping-white.svg";
 import explore from "../assets/explore.svg";
 import tel from "../assets/tel.svg";
+import heart from "../assets/heart.svg";
 
 const Home = () => {
   return (
@@ -24,10 +25,11 @@ const Banner = () => {
       <div className="b">Download app</div>
 
       <div className="d-flex align-items-center banner-end">
-        <div>English / Ngn </div>
-        <div>Help</div>
+        <div>
+          <img src={heart} alt="" />
+        </div>
         <div id="fast">
-          <i src={shipping}></i> Fast delivery
+          <img src={shipping} />
         </div>
       </div>
     </div>
@@ -118,7 +120,7 @@ const Bottom = () => {
         <img src={explore} alt="" />
       </div>
       <div
-        className="d-md-flex justify-content-md-around align-item-center align-items-md-baseline collapse-style collapse-container"
+        className="links-list d-md-flex justify-content-md-around align-item-center align-items-md-baseline collapse-style collapse-container"
         id="navbarSupportedContent"
       >
         <ul className="nav-links">
